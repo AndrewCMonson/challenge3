@@ -28,7 +28,12 @@ button.addEventListener('click', e => {
     if(!uppercase && !lowercase && !numeric && !specChars){
         alert("You must select at least one character type");
         return;
-    } 
+    }
+    
+    // evaluates character selection via ternary operators to show validation of user selection
+    const validation = `${uppercase ? 'uppercase: ✅' : 'uppercase: ❌'} ${lowercase ? 'lowercase: ✅' : 'lowercase: ❌'} ${numeric ? 'numeric: ✅' : 'numeric: ❌'} ${specChars ? 'special characters: ✅' : 'special characters: ❌'}`
+
+    alert(`Characters selected: ${validation}`);
 
     // uses ternary operators to determine if prompts were answered "true or false" and pushes respective character set into charSet variable to create master character list to be iterated through later
     const charSet = `${uppercase? upperCharSet : ''}${lowercase? lowerCharSet : ''}${numeric? numericCharSet : '' }${specChars? specCharSet : ''}`;
