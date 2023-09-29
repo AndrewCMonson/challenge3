@@ -6,8 +6,6 @@ const letters = 'abcdefghijklmnopqrstuvwxyz'
 const numericCharSet = '0123456789';
 const specCharSet = '!@#$%^&*';
 
-
-
 // function that takes a character string and selects a random character
 // charAt uses the value of Math random, rounded down via Math floor, to determine which index of passed string to return as new string
 const randomChar = (string) => {
@@ -42,6 +40,7 @@ button.addEventListener('click', e => {
     
     /* My first choice was to use ternary operators to evaluate character selection to show validation of user selection after all selections were made.
        At the request of my instructor, I used nested if statements to evaluate user input to return a validation message to the user after their selections were made.
+    
     const validation = `${uppercase ? 'uppercase' : ''} ${lowercase ? 'lowercase' : ''} ${numeric ? 'numeric' : ''} ${specChars ? 'special characters' : ''}`; */
 
     let validation = '';
@@ -63,9 +62,9 @@ button.addEventListener('click', e => {
 
      /* My first choice here was to use ternary operators to determine if prompts were answered 'true or false' and pushes respective character set into charSet variable to create master character list to be iterated through later.
         At the request of my instructor, I used nested if statements to evaluate user choices and push a charSet to the master charSet based on the user choices.
+    
     const charSet = `${uppercase? upperCharSet : ''}${lowercase? lowerCharSet : ''}${numeric? numericCharSet : '' }${specChars? specCharSet : ''}`;  */
     
-    // evaluates user choices to determine which characters to push to charSet variable to be iterated through later
     let charSet = '';
 
     if(uppercase){
