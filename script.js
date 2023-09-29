@@ -46,18 +46,18 @@ button.addEventListener('click', e => {
     let validation = '';
 
     if(uppercase){
-        validation += 'uppercase ';
+        validation += 'uppercase \n';
     } if(lowercase){
-        validation += 'lowercase ';
+        validation += 'lowercase \n';
     } if(numeric){
-        validation += 'numeric ';
+        validation += 'numeric \n';
     } if(specChars){
         validation += 'special characters ';
     }
 
     /* used template literal to inject validation variable into alert message
     this alert could also have been written using concatenation: alert('Characters selected' + validation); */
-    alert(`Characters selected: ${validation}`);
+    alert(`Characters selected:\n${validation}`);
 
 
      /* My first choice here was to use ternary operators to determine if prompts were answered 'true or false' and pushes respective character set into charSet variable to create master character list to be iterated through later.
@@ -93,7 +93,7 @@ button.addEventListener('click', e => {
 
 })
 
-// allows user to copy text to clipboard for us in different application
+// allows user to copy text to clipboard for use in different application
 const copyButton = document.getElementById('copy-button');
 
 copyButton.addEventListener('click', e => {
@@ -101,6 +101,7 @@ copyButton.addEventListener('click', e => {
     let copiedText = document.getElementById('generated-password');
 
     copiedText.select();
+    copiedText.setSelectionRange(0, 9999); // allows for selection on mobile devices
 
     navigator.clipboard.writeText(copiedText.value);
 

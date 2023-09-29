@@ -3,14 +3,23 @@
 }
 
 main {
-    height: 300px;;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: #5751cf;
+}
+
+h1{
+  color: white;
+  text-shadow: black 5px 5px 5px;
 }
 
 span {
     margin-top: -20px;
+    color: white;
 }
 
 .password {
@@ -22,20 +31,36 @@ span {
     padding: 5px;
     margin-top: 25px;
     resize: none;
+    border-radius: 15px;
 }
 
 .buttons {
     margin-top: 25px;
 }
 
+.btn {
+  border-radius: 10px 5px;
+  padding: 8px;
+  cursor: pointer;
+  background: rgb(249,244,245);
+  background: linear-gradient(90deg, rgba(249,244,245,1) 0%, rgba(253,173,29,1) 50%, rgba(252,176,69,1) 100%);  
+}
+
+.btn:hover{
+  position: relative;
+  bottom: 1px;
+  left: 1px;
+  box-shadow: black 1px 1px;
+}
+
 @media (max-width: 690px) {
     .btn {
       font-size: 1rem;
-      margin: 16px 0px 0px 0px;
-      padding: 10px 15px;
+      
+     
     }
   
-    #password {
+    .password {
       font-size: 1rem;
     }
   }
@@ -43,6 +68,9 @@ span {
   @media (max-width: 500px) {
     .btn {
       font-size: 0.8rem;
+    }
+    .password{
+      min-width: 80vw;
     }
   }
   
