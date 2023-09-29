@@ -16,10 +16,12 @@ const randomChar = (string) => {
 button.addEventListener('click', e => {
     
     const pwordLengthInput = prompt('Select password length', 20);
+    
     if(pwordLengthInput < 8 || pwordLengthInput > 128 || isNaN(pwordLengthInput)) {
         alert('please select a number between 8 and 128');
         return;
     } 
+    
     const uppercase = confirm('Inlcude uppercase letters? OK for yes, cancel for no');
     const lowercase = confirm('Include lowercase letters? OK for yes, cancel for no');
     const numeric = confirm('Include numbers? OK for yes, cancel for no');
@@ -42,7 +44,7 @@ button.addEventListener('click', e => {
     // blank variable to store final password
     let password = '';
 
-    // for loop that loops through selected character sets, calls the randomChar function and pushes each character to the password variable
+    // for loop that loops for the duration of the user input character count, calling the randomChar function on the charSet for the entire length and pushing it to the password
     for (let i = 0; i < pwordLengthInput; i++){
         password += randomChar(charSet);
     }
