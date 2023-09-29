@@ -29,13 +29,13 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 ## Application Screenshots
-![App screenshot](assets\css\resources\PW-Generator-SS.png)
-![App screenshot](assets\css\resources\PW-length-ss.png)
-![App screenshot](assets\css\resources\PWG-Uppercase-SS.png)
-![App screenshot](assets\css\resources\PWG-Lowercase-SS.png)
-![App screenshot](assets\css\resources\PWG-Numbers-SS.png)
-![App screenshot](assets\css\resources\PWG-SpecChars-SS.png)
-![App screenshot](assets\css\resources\PWG-Final-SS.png)
+![App screenshot](assets/css/resources/PW-Generator-SS.png)
+![App screenshot](assets/css/resources/PW-length-ss.pngength-ss.png)
+![App screenshot](assets/css/resources/PWG-Uppercase-SS.png)
+![App screenshot](assets/css/resources/PWG-Lowercase-SS.png)
+![App screenshot](assets/css/resources/PWG-Numbers-SS.png)
+![App screenshot](assets/css/resources/PWG-SpecChars-SS.png)
+![App screenshot](assets/css/resources/PWG-Final-SS.png)
 
 ## Application Instructions
 Users can access the password generator at this URL: https://andrewcmonson.github.io/challenge3/
