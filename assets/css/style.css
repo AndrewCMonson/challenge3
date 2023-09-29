@@ -24,7 +24,7 @@ span {
 
 .password {
     text-align-last: center;
-    border: dashed 5px grey;
+    border: dashed 5px black;
     height: 100px;
     width: auto;
     min-width: 500px;
