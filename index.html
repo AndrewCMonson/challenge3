@@ -3,14 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta lang="en-US">
-        <link rel="stylesheet" href="/assets/css/reset.css" type="text/css">
-        <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+        <link rel="stylesheet" href="./assets/css/reset.css" type="text/css">
+        <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
     </head>
     <body>
         <main>
             <h1>Password Generator</h1>
-            <div class="pword-length-select" id="generated-password"></div>
-            <button id="button" type="submit">Generate Password</button>
+            <span>built by andrew &copy; 2023</span>
+            <textarea class="password" id="generated-password">Password will appear here</textarea>
+            <div class="buttons">
+                <button id="gen-button" type="submit">Generate Password</button> 
+                <button id="copy-button" type="copy">Copy Password</button>
+            </div>
         </main>
     </body>
     <script src="script.js"></script>

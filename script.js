@@ -1,5 +1,5 @@
 // Declare the button const to grab button from DOM
-const button = document.getElementById('button');
+const button = document.getElementById('gen-button');
 // Global declaration of character set consts
 const upperCharSet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const lowerCharSet = 'abcdefghijklmnopqrstuvwxyz';
@@ -31,7 +31,7 @@ button.addEventListener('click', e => {
     }
     
     // evaluates character selection via ternary operators to show validation of user selection
-    const validation = `${uppercase ? 'uppercase: ✅' : 'uppercase: ❌'} ${lowercase ? 'lowercase: ✅' : 'lowercase: ❌'} ${numeric ? 'numeric: ✅' : 'numeric: ❌'} ${specChars ? 'special characters: ✅' : 'special characters: ❌'}`
+    const validation = `${uppercase ? 'uppercase' : ''} ${lowercase ? 'lowercase' : ''} ${numeric ? 'numeric' : ''} ${specChars ? 'special characters' : ''}`;
 
     alert(`Characters selected: ${validation}`);
 
@@ -55,4 +55,16 @@ button.addEventListener('click', e => {
 })
 
 
+// allows user to copy text to clipboard for us in different application
 
+const copyButton = document.getElementById('copy-button');
+
+copyButton.addEventListener('click', e => {
+    let copiedText = document.getElementById('generated-password');
+
+    copiedText.select();
+
+    navigator.clipboard.writeText(copiedText.value);
+
+    alert('Text copied to clipboard')
+})
