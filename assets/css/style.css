@@ -44,7 +44,8 @@ span {
   cursor: pointer;
   background: rgb(249,244,245);
   background: linear-gradient(90deg, rgba(249,244,245,1) 0%, rgba(253,173,29,1) 50%, rgba(252,176,69,1) 100%); 
-  color: black 
+  color: black;
+  font-weight: bold;
 }
 
 .btn:hover{
