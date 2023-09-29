@@ -27,10 +27,10 @@ button.addEventListener('click', e => {
         return;
     } 
     
-    const uppercase = confirm('Include uppercase letters? OK for yes, cancel for no');
-    const lowercase = confirm('Include lowercase letters? OK for yes, cancel for no');
-    const numeric = confirm('Include numbers? OK for yes, cancel for no');
-    const specChars = confirm('Include special characters? OK for yes, cancel for no');
+    const uppercase = confirm('Include uppercase letters? OK for yes, Cancel for no');
+    const lowercase = confirm('Include lowercase letters? OK for yes, Cancel for no');
+    const numeric = confirm('Include numbers? OK for yes, Cancel for no');
+    const specChars = confirm('Include special characters? OK for yes, Cancel for no');
 
     // verifies that at least one character type was selected and if not, returns alert to user
     if(!uppercase && !lowercase && !numeric && !specChars){
