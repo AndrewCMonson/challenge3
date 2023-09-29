@@ -44,6 +44,7 @@ Upon clicking "Generate Possword", users will be guided through prompts to compl
 
 ## Reflection
 - This project tested my knowledge of quite a few Javascript fundamentals including if statements, window alerts, prompts and confirmations, as well as interacting with the DOM.
+- Although I was given boilerplate HTML and CSS, I chose to use my own to practice the UI building experience.
 - I chose to provide two solutions to a few areas of this project to test my own knowledge and also make the code more readable, accessible and succinct. My final version includes code up to the point that we have currently learned in my course as of weeks 3 and 4.
 - Tools used to build this application include CSS3, HTML5 and JS.
 - Outside of the stated acceptance criteria, I chose to add a copy button to copy the password to the user's clipboard for use elsewhere.
