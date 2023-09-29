@@ -12,7 +12,7 @@ This application is used to generate random passwords based on user selection of
 Users are guided through a series of window prompts where the above selections are made and then printed to the screen.
 
 ## Application Screenshots
-
+![App screenshot](assets\css\resources\PW-Generator-SS.png)
 ## Application Instructions
 Users can access the password generator at this URL: https://andrewcmonson.github.io/challenge3/
 
