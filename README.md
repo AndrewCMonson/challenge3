@@ -13,8 +13,17 @@ Users are guided through a series of window prompts where the above selections a
 
 ## Application Screenshots
 ![App screenshot](assets\css\resources\PW-Generator-SS.png)
+![App screenshot](assets\css\resources\PW-length-ss.png)
+![App screenshot](assets\css\resources\PWG-Uppercase-SS.png)
+![App screenshot](assets\css\resources\PWG-Lowercase-SS.png)
+![App screenshot](assets\css\resources\PWG-Numbers-SS.png)
+![App screenshot](assets\css\resources\PWG-SpecChars-SS.png)
+![App screenshot](assets\css\resources\PWG-Final-SS.png)
+
 ## Application Instructions
 Users can access the password generator at this URL: https://andrewcmonson.github.io/challenge3/
+
+Upon clicking "Generate Possword", users will be guided through prompts to complete generation.
 
 ## Reflection
 - This project tested my knowledge of quite a few Javascript fundamentals including if statements, window alerts, prompts and confirmations, as well as interacting with the DOM.
